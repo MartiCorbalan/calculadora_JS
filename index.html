@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="calcSencera">
+    <div id="filaInput">
+      <input class="input" id="input" placeholder="0" readonly>
+    </div>
+    <div id="fila1">
+      <div>
+        <button class="lightButton" onclick="cleanInput()">C</button>
+      </div>
+      <div>
+        <button class="lightButton" onclick="cambiarSigno()">+/-</button>
+      </div>
+      <div>
+        <button class="lightButton" onclick="porciento()">%</button>
+      </div>
+      <div>
+        <button class="acentButton" onclick="operacionFunction('/')">/</button>
+      </div>
+    </div>
+    <div id="fila2">
+      <div>
+        <button class="lightButton" onclick="MemoryClear()">mc</button>
+      </div>
+      <div>
+        <button class="lightButton" onclick="MemoryRetrive()">mr</button>
+      </div>
+      <div>
+        <button class="lightButton" onclick="memorySave()">m+</button>
+      </div>
+      <div>
+        <button class="lightButton" onclick="RestNumMemory()">m-</button>
+      </div>
+    </div>
+    <div id="fila3">
+      <div>
+        <button class="darkButton" onclick="add(7)">7</button>
+      </div>
+      <div>
+        <button class="darkButton" onclick="add(8)">8</button>
+      </div>
+      <div>
+        <button class="darkButton" onclick="add(9)">9</button>
+      </div>
+      <div>
+        <button class="acentButton" onclick="operacionFunction('*')">x</button>
+      </div>
+    </div>
+    <div id="fila4">
+      <div>
+        <button class="darkButton" onclick="add(4)">4</button>
+      </div>
+      <div>
+        <button class="darkButton" onclick="add(5)">5</button>
+      </div>
+      <div>
+        <button class="darkButton" onclick="add(6)">6</button>
+      </div>
+      <div>
+        <button class="acentButton" onclick="operacionFunction('-')">-</button>
+      </div>
+    </div>
+    <div id="fila5">
+      <div>
+        <button class="darkButton" onclick="add(1)">1</button>
+      </div>
+      <div>
+        <button class="darkButton" onclick="add(2)">2</button>
+      </div>
+      <div>
+        <button class="darkButton" onclick="add(3)">3</button>
+      </div>
+      <div>
+        <button class="acentButton" onclick="operacionFunction('+')">+</button>
+      </div>
+    </div>
+    <div id="fila6">
+      <div id="zero">
+        <button class="ceroButton darkButton" onclick="add(0)">0</button>
+      </div>
+      <div id="coma">
+        <button class="darkButton" onclick="add('.')">,</button>
+      </div>
+      <div id="igual">
+        <button class="acentButton" onclick="igual()">=</button>
+      </div>
+    </div>
+    <div id="fila7">
+      <div>
+        <button class="acentButton" onclick="cuadrado()">x&#178</button>
+      </div>
+      <div>
+        <button class="acentButton" onclick="cubo()">x&#179</button>
+      </div>
+      <div>
+        <button class="acentButton" onclick="pi()">PI</button>
+      </div>
+      <div>
+        <button class="acentButton" onclick="raizCuadrada()">&radic;</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./main.js"></script>
+</html>
